@@ -3,25 +3,94 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+    <!-- Fundo com degradê -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFA500" Offset="0.0" />
+            <!-- Laranja -->
+            <GradientStop Color="#1E90FF" Offset="1.0" />
+            <!-- Azul -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
-            <Label Text="Preço do Etanol: "></Label>
-            <Entry x:Name="txt_etanol" Placeholder="R$ " />
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="30,30,30,30">
 
-            <Label Text="Preço da gasolina: "></Label>
-            <Entry x:Name="txt_gasolina" />
+        <!-- Título fixo no topo -->
+        <Label Grid.Row="0"
+               Text="O Veredicto do Posto"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Margin="0,0,0,5" />
 
-            <Button Text="Qual compensa mais?" Clicked="Button_Clicked"></Button>
-            
-        </VerticalStackLayout>
-    </ScrollView>
+        <!-- Subtítulo / Tagline -->
+        <Label Grid.Row="1"
+               Text="Descubra qual combustível vale mais a pena no seu bolso!"
+               FontSize="16"
+               FontAttributes="Italic"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20" />
+
+        <!-- Conteúdo rolável -->
+        <ScrollView Grid.Row="2">
+            <VerticalStackLayout Spacing="25" HorizontalOptions="Fill">
+
+                <!-- Imagem do bot menor -->
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="100"
+                    Aspect="AspectFit"
+                    HorizontalOptions="Center" />
+
+                <!-- Entrada Etanol -->
+                <Label Text="Preço do Etanol:"
+                       TextColor="White"
+                       FontAttributes="Bold" />
+
+                <Border BackgroundColor="White"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 10">
+                    <Entry x:Name="txt_etanol"
+                           Placeholder="Ex: 3,29"
+                           PlaceholderColor="Gray"
+                           Keyboard="Numeric"
+                           TextColor="Black"
+                           HeightRequest="40"
+                           Margin="10,0" />
+                </Border>
+
+                <!-- Entrada Gasolina -->
+                <Label Text="Preço da Gasolina:"
+                       TextColor="White"
+                       FontAttributes="Bold" />
+
+                <Border BackgroundColor="White"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 10">
+                    <Entry x:Name="txt_gasolina"
+                           Placeholder="Ex: 5,49"
+                           PlaceholderColor="Gray"
+                           Keyboard="Numeric"
+                           TextColor="Black"
+                           HeightRequest="40"
+                           Margin="10,0" />
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Botão fixo no rodapé -->
+        <Button Grid.Row="3"
+                Text="Qual compensa mais?"
+                Clicked="Button_Clicked"
+                BackgroundColor="White"
+                TextColor="#1E90FF"
+                CornerRadius="12"
+                HeightRequest="50"
+                Margin="0,20,0,0" />
+
+    </Grid>
 
 </ContentPage>

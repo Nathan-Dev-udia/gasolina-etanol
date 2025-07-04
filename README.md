@@ -1,4 +1,7 @@
 # ⛽ O Veredicto do Posto
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=.net&logoColor=white)
+![MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat&logo=.net&logoColor=white)
+![XAML](https://img.shields.io/badge/XAML-0094BC?style=flat&logo=windows&logoColor=white)
 
 Aplicativo simples desenvolvido com .NET MAUI + XAML, que ajuda o usuário a descobrir qual combustível compensa mais: **etanol ou gasolina**.
 

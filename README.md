@@ -22,6 +22,13 @@ Ele foi desenvolvido com fins didáticos e para testar recursos visuais como:
 - Botão fixo no rodapé com estilo customizado
 - Uso do `DisplayAlert` para exibir o resultado
 
+---
+## 📸 Captura de Tela
+Uma prévia visual do aplicativo em funcionamento:
+
+<p align="center"> <img src="gasolinatres.png" alt="Screenshot do app Veredicto do Posto" width="300"/> </p>
+
+---
 ## ⚙️ Como Funciona
 
 O usuário informa os preços do etanol e da gasolina, e o app aplica a regra:

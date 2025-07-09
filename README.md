@@ -31,8 +31,8 @@ Uma prévia visual do aplicativo em funcionamento:
 ---
 ## ⚙️ Como Funciona
 
-O usuário informa os preços do etanol e da gasolina, e o app aplica a regra:
-
+O usuário informa os preços do etanol e da gasolina, e o app aplica a regra:  
+Se o preço do etanol for menor ou igual a 70% do preço da gasolina, o etanol compensa. Caso contrário, a gasolina compensa.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -46,4 +46,4 @@ Projeto finalizado como teste de conceito. Pode ser reaproveitado para fins educ
 
 ---
 
-Feito por [Nathan Fernandes](https://github.com/Nathan-Dev-udia) 🧠
+> Feito por [Nathan Fernandes](https://github.com/Nathan-Dev-udia)

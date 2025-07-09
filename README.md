@@ -1,4 +1,5 @@
 # ⛽ O Veredicto do Posto
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=.net&logoColor=white)
 ![MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat&logo=.net&logoColor=white)
 ![XAML](https://img.shields.io/badge/XAML-0094BC?style=flat&logo=windows&logoColor=white)
